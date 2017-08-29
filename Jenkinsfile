@@ -3,17 +3,8 @@ pipeline {
   stages {
     stage('Hello') {
       steps {
-        sh '''pipeline {
- agent any
- stages {
-   stage ('Hello') {
-    steps {
-     sh 'echo Hello Jenkins!'
-    }
-   }
-  }
-}'''
-        }
+        sh 'echo Hello World!'
       }
     }
   }
+}
