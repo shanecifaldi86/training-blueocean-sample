@@ -1,0 +1,19 @@
+pipeline {
+  agent any
+  stages {
+    stage('Hello') {
+      steps {
+        sh '''pipeline {
+ agent any
+ stages {
+   stage ('Hello') {
+    steps {
+     sh 'echo Hello Jenkins!'
+    }
+   }
+  }
+}'''
+        }
+      }
+    }
+  }
